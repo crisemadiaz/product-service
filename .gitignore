@@ -1,0 +1,16 @@
+.env
+.env.local
+
+.dockerignore
+docker-compose.override.yml
+docker-compose.yml
+
+node_modules/
+
+npm-debug.log*
+.DS_Store
+.idea/
+.vscode/
+
+dist/
+build/
