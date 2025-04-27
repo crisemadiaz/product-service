@@ -1,4 +1,4 @@
-Auth Service - Microservicio de Autenticación
+Product Service - Microservicio de Productos
 Este proyecto requiere configuración de variables de entorno y Docker para funcionar correctamente.
 
 #Crea un archivo .env en la raíz del proyecto:
