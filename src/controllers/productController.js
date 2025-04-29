@@ -33,10 +33,10 @@ const getProductById = (req, res) => {
         return res.status(400).json({error: 'ID del producto requerido'});
     }
 
-    productModel.getProductById(id, (err, results) => {
+    productModel.getProductById(id, (err, result) => {
         if (err) return res.status(500).json({error: 'Error al obtener el producto'});
-        if (results.length === 0) return res.status(400).json({error: 'Producto no encontrado'});
-        res.status(200).json({product: results[0]});
+        if (result.length === 0) return res.status(400).json({error: 'Producto no encontrado'});
+        res.status(200).json({product: result[0]});
     });
 };
 
