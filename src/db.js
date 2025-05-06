@@ -3,10 +3,10 @@ require('dotenv').config();
 
 const connectWithRetry = () => {
     const connection = mysql.createConnection({
-        host: process.env.DB_HOST || 'mariadb-product',
-        user: process.env.DB_USER,
-        password: process.env.DB_PASSWORD,
-        database: process.env.DB_NAME,
+        host: process.env.PRODUCT_DB_HOST || 'mariadb-product',
+        user: process.env.PRODUCT_DB_USER,
+        password: process.env.PRODUCT_DB_PASSWORD,
+        database: process.env.PRODUCT_DB_NAME || 'productdb',
         port: 3306,
     });
 
